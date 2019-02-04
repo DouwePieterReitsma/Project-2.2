@@ -10,4 +10,3 @@ if(empty($username) || empty($password))
     $_SESSION['message'] = "Invalid credentials.";
     exit;
 }
-
