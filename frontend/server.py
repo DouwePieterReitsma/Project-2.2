@@ -1,5 +1,7 @@
-def main():
-    pass
-
-if __name__ == "__main__":
-    main()
+class Server:
+    def __init__(self, port):
+        self.port = port
+    
+    def run(self):
+        while True:
+            pass
