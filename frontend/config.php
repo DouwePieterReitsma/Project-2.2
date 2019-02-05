@@ -2,8 +2,9 @@
 
 $config = array();
 
-$config["dsn"] = "";
+$config["host"] = "localhost";
 $config["username"] = "user";
 $config["password"] = "pwd";
+$config["dbname"] = "project22";
 
-return $config;
+return (object)$config;

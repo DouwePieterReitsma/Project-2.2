@@ -1,18 +1,15 @@
 <?php
 
+$config = include("config.php");
+
 class DbConnection
 {
     private static $instance = NULL;
     private $connection;
 
-    private $host = "localhost";
-    private $username = "";
-    private $password = "";
-    private $name = "";
-
     private function __construct()
     {
-        $this->connection = new PDO("mysql:host={$this->host};dbname={$this->name}", $this->username, $this->password);
+        $this->connection = new PDO("mysql:host={$config->host};dbname={$config->name}", $config->username, $config->password);
     }
 
     public static function getInstance()
