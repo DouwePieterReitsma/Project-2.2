@@ -13,11 +13,13 @@
   
 	<div  class="welcomebox">
 	
+	Welkom klootzakken, hier jullie grafwebsite. <3
 	
 	</div>
   
   
   	<div  class="databox">
+		<header>shitload aan data, moet nog nice indeling komen</header>
 		<nav>
             <ul>
                 <li>data</li>
@@ -38,6 +40,7 @@
 	
 	<div  class="controlbox">
 	
+	controls en zoekfunctie etc?
 	
 	</div>
 	
