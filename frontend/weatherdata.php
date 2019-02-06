@@ -22,8 +22,6 @@ function csvtojson($filename)
     return $json;
 }
 
-
-// todo
-$json = csvtojson("21170.csv");
+$json = csvtojson("data/21170.csv");
 
 print_r($json);

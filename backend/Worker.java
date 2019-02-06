@@ -1,6 +1,5 @@
 import java.io.*;
 import java.net.Socket;
-import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -63,6 +62,7 @@ public class Worker implements Runnable {
                         String partiallyReplacedSTP = fromClient.replace("<STP>", "");
                         String replacedSTP = partiallyReplacedSTP.replace("</STP>", "");
                         newLine.append(replacedSTP.strip());
+                        testingFunction(replacedSTP.strip());
                         newLine.append(",");
                     } else if (fromClient.contains("SLP")) {
                         String partiallyReplacedSLP = fromClient.replace("<SLP>", "");
@@ -111,18 +111,16 @@ public class Worker implements Runnable {
                             addNewLineToNewFile(stationNumber, newLine);
                             stationSet.add(stationNumber);
                         }
-
                         newLine = new StringBuilder();
                     }
                 }
             }
-
             connection.close();
             System.err.println("Connection closed, worker thread ending.");
+
         } catch (IOException ioe) {
             System.err.println(ioe);
         }
-
     }
 
     private synchronized void addNewLineToNewFile(String stationNumber, StringBuilder newLine) throws IOException{
@@ -135,7 +133,6 @@ public class Worker implements Runnable {
         newOutput.write(newLine.toString());
         newOutput.newLine();
         newOutput.flush();
-        //newOutput.close();
     }
 
     private synchronized void addNewLineToExistingFile(String stationNumber, StringBuilder newLine) throws IOException {
@@ -146,6 +143,12 @@ public class Worker implements Runnable {
         appendOutput.append(newLine.toString());
         appendOutput.newLine();
         appendOutput.flush();
-        //appendOutput.close();
+    }
+
+    private static void testingFunction(String testable) {
+
+        if (testable.length() == 0) {
+            System.out.println("No measurement found.");
+        }
     }
 }
