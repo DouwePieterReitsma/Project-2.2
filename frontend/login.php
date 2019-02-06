@@ -29,5 +29,5 @@ function getSaltForUsername($username)
 
 function login()
 {
-    $conn = DbConnection::getInstance()->getConnection();
+    $_SESSION["loggedin"] = true;
 }
