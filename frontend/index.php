@@ -23,7 +23,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
   </head>
   <body>
   
-	<div  class="welcomebox">
+  	<div class="logobox">
+	
+	<img src="logo.png" alt="Logo" class="companylogo"> 
+	
+	</div>
+  
+	<form align="right" name="form1" method="post" action="logout.php">
+		<label class="logoutLblPos">
+			<input name="submit2" type="submit" id="submit2" value="log out">
+		</label>
+	</form>
+  
+	<div class="welcomebox">
 	
 	Welkom klootzakken, hier jullie grafwebsite. <3
 	
@@ -47,14 +59,23 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
 
 
             </ul>
-        </nav>   
+        </nav>
+		
+		<div align="center">
+			<b>Data Download</b> <br> <br>
+			 Please select the date that you want the weather data from. <br>
+			 When you have selected a date hit download. 
+			 <form>
+				<!-- folder selectie nog implementeren -->
+				<b>Select a day</b>
+				 <input type="date" name="folderdate" 
+			</form> 
+			<!-- Download optie nog implementeren -->
+			<button onclick=? align="right" style="width:auto;">Download</button>
+		</div>
+		
     </div>
 	
-	<div  class="controlbox">
-	
-	controls en zoekfunctie etc?
-	
-	</div>
 	
 	<div style="height: 400px; overflow: auto;">
     <!-- Html Elements -->
@@ -81,20 +102,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
 			</div>
 	</div> 
 	-->
-	<div  class="downloadbox">
-		<b>Data Download</b> <br> <br>
-		 Please select the date that you want the weather data from. <br>
-		 When you have selected a date hit download. 
-		 <form>
-			<!-- folder selectie nog implementeren -->
-			<b>Select a day</b>
-			 <input type="date" name="folderdate" 
-		</form> 
-		<!-- Download optie nog implementeren -->
-		<button onclick=? align="right" style="width:auto;">Download</button>
-		
-    </div>
-	
+
+
 	
 	<div  class="mapdata"</div>
 		
