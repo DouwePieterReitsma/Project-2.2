@@ -26,10 +26,10 @@ Always set the map height explicitly to define the size of the div
  element that contains the map. */
 #map {
 	height: 50%;
-	width: 30%;
+	width: 32.5%;
 	position: absolute;
-    top: 45%;
-    left: 57.5%;
+    top: 5%;
+    left: 50%;
 }
 /* Optional: Makes the sample page fill the window. */
 html, body {
@@ -40,16 +40,17 @@ html, body {
 	
 table {
   background-color: rgba(0,0,0,0.4); 
+  height: 100%;
 }
 	
 	
 /* Data display from map */	
 .mapdata {
 	height: 50%;
-	width: 10%;
+	width: 15%;
 	position: absolute;
-    top: 45%;
-    left: 87.5%;
+    top: 5%;
+    left: 82.5%;
 	borderwidth: 5px;
 }
 
@@ -154,10 +155,50 @@ span.psw {
 	height: 15%;
 	width: 20%;
 	position: absolute;
-    top: 5%;
+    top: 60%;
     left: 75%;
 	padding: 10px;
 	border: solid;
 	borderwidth: 5px;
+	background-color: rgba(0,0,0,0.4); 
 }
+
+.databox{
+	height: 67.5%;
+	width: 45%;
+	position: absolute;
+    top: 25%;
+    left: 2.5%;
+	padding: 10px;
+	border: solid;
+	borderwidth: 5px;
+	background-color: rgba(0,0,0,0.4); 
+}
+
+
+.controlbox{
+	height: 15%;
+	width: 20%;
+	position: absolute;
+    top: 60%;
+    left: 50%;
+	padding: 10px;
+	border: solid;
+	borderwidth: 5px;
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.welcomebox{
+	height: 12.5%;
+	width: 45%;
+	position: absolute;
+    top: 5%;
+    left: 2.5%;
+	padding: 10px;
+	border: solid;
+	borderwidth: 5px;
+	background-color: rgba(0,0,0,0.4); 
+}
+nav ul{height:600px; width:18%;}
+nav ul{overflow:hidden; overflow-y:scroll;}
 

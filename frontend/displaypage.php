@@ -11,7 +11,41 @@
   </head>
   <body>
   
+	<div  class="welcomebox">
+	
+	
+	</div>
   
+  
+  	<div  class="databox">
+		<nav>
+            <ul>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+				<li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+
+
+            </ul>
+        </nav>   
+    </div>
+	
+	<div  class="controlbox">
+	
+	
+	</div>
+	
+	<div style="height: 400px; overflow: auto;">
+    <!-- Html Elements -->
+	</div>
+	
+	
 	<!-- nog toevoegen actie die de geselecteerde map met data selecteerd voor jaar maand dag etc -->
 	<!-- misschien later, eerst simpelere form met date input
 	<div class="dropdown">
@@ -33,13 +67,16 @@
 	</div> 
 	-->
 	<div  class="downloadbox">
-		<b>Data Download</b>
-		<!--
+		<b>Data Download</b> <br> <br>
+		 Please select the date that you want the weather data from. <br>
+		 When you have selected a date hit download. 
 		 <form>
+			<!-- folder selectie nog implementeren -->
 			<b>Select a day</b>
-			<div type= "date"> <input type="date" name="folderdate" </div>
-		</form> -->
-		<button onclick= align="right" style="width:auto;">Download</button>
+			 <input type="date" name="folderdate" 
+		</form> 
+		<!-- Download optie nog implementeren -->
+		<button onclick=? align="right" style="width:auto;">Download</button>
 		
     </div>
 	
