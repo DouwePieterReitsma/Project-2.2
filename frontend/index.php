@@ -2,15 +2,9 @@
 
 session_start();
 
-$_SESSION["title"] = "Home";
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
+{
+    header("Location: login.php");
+    exit;
+}
 
-?>
-
-<html>
-<head>
-    <title><?php echo $_SESSION['title']; ?></title>
-</head>
-<body>
-    
-</body>
-</html>
