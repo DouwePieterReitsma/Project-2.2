@@ -21,6 +21,43 @@ button {
   cursor: pointer;
   width: 100%;
 }
+/* Google maps style and location
+Always set the map height explicitly to define the size of the div
+ element that contains the map. */
+#map {
+	height: 50%;
+	width: 30%;
+	position: absolute;
+    top: 45%;
+    left: 57.5%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 80%;
+	margin: 0;
+	padding: 0;
+    }
+	
+table {
+  background-color: rgba(0,0,0,0.4); 
+}
+	
+	
+/* Data display from map */	
+.mapdata {
+	height: 50%;
+	width: 10%;
+	position: absolute;
+    top: 45%;
+    left: 87.5%;
+	borderwidth: 5px;
+}
+
+th, td {
+  padding: 2px;
+  border: solid;
+  borderwidht: 1px;
+}
 
 .center {
   margin: 0;
@@ -111,5 +148,16 @@ span.psw {
 @keyframes animatezoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
+}
+
+.downloadbox{
+	height: 15%;
+	width: 20%;
+	position: absolute;
+    top: 5%;
+    left: 75%;
+	padding: 10px;
+	border: solid;
+	borderwidth: 5px;
 }
 
