@@ -15,7 +15,7 @@
  	<!-- Popup Menu voor Login -->
 	<div id="loginMenu" class="popupmenu">
 	  
-		<form class="popupmenu-content animate" action="/action_page.php">
+		<form class="popupmenu-content animate" action="/login.php" method="POST">
 			<!-- nog toevoegen -> bedrijfslogo -->
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('loginMenu').style.display='none'" class="close" title="Close">&times;</span>
@@ -45,7 +45,7 @@
 	<!-- Popup Menu voor registratie -->
 	<div id="registerMenu" class="popupmenu">
 	  
-		<form class="popupmenu-content animate" action="/action_page.php">
+		<form class="popupmenu-content animate" action="/register.php" method="POST">
 		
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('registerMenu').style.display='none'" class="close" title="Close">&times;</span>
@@ -53,14 +53,14 @@
 			</div>
 		
 			<div class="container">
-				<label for="uname"><b>Email Address</b></label>
-				  <input type="text" placeholder="Enter Email" name="uname" required>
+				<label for="username"><b>Email Address</b></label>
+				  <input type="text" placeholder="Enter Email" name="username" required>
 
-				  <label for="psw"><b>Password</b></label>
-				  <input type="password" placeholder="Enter Password" name="psw" required>
+				  <label for="password"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="password" required>
 				  
-				  <label for="psw"><b>Re-enter Password</b></label>
-				  <input type="password" placeholder="Enter Password" name="psw" required>
+				  <label for="password"><b>Re-enter Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="password" required>
 					
 				  <button type="submit">Register</button>
 			</div>

@@ -3,8 +3,8 @@
 $config = array();
 
 $config["host"] = "localhost";
-$config["username"] = "user";
-$config["password"] = "pwd";
-$config["dbname"] = "project22";
+$config["username"] = "root";
+$config["password"] = "";
+$config["dbname"] = "weatherdata";
 
 return (object)$config;
