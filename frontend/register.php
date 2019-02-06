@@ -52,13 +52,13 @@ if(!empty($username) || !empty($password))
 
         $_SESSION['loggedin'] = true;
 
-        header("Location: displaypage.php");
+        header("Location: index.php");
 
         exit;
     }
     else
     {
-        header("Location: index.php");
+        header("Location: loginpage.php");
 
         $_SESSION['loggedin'] = false;
 
