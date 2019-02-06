@@ -13,21 +13,15 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true)
 $username = array_key_exists('username', $_POST) ? trim($_POST['username']) : null;
 $password = array_key_exists('password', $_POST) ? trim($_POST['password']) : null;
 
-function getSaltForUsername($username)
+function login($username, $password)
 {
     $conn = DbConnection::getInstance()->getConnection();
 
-    $query = "SELECT salt FROM users WHERE username = :username";
+    $hash = password_hash($password);
 
-    $stmt = $conn->prepare($query);
-    $stmt->bindValue(":username", $username);
+    
 
-    $stmt->execute();
 
-    //todo
-}
 
-function login()
-{
     $_SESSION["loggedin"] = true;
 }
