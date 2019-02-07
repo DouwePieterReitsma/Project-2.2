@@ -37,13 +37,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
   
 	<div class="welcomebox">
 	
-	Welkom klootzakken, hier jullie grafwebsite. <3
+	Welkom blablabla<3
 	
 	</div>
   
   
   	<div  class="databox">
-		<header>shitload aan data, moet nog nice indeling komen</header>
+		<header>datadump, moet nog nice indeling komen</header>
 		<nav>
             <ul>
                 <li>data</li>
