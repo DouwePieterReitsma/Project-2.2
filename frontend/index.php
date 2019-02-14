@@ -185,7 +185,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
           center: {lat: 42.45, lng: 59.617},
           zoom: 3
         });
+
+				map.data.loadGeoJson("weatherdata.php");
       }
+
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=
 AIzaSyABY3ccIgpUROaVrcQjp90IYjlXwTZhYdA&callback=initMap"

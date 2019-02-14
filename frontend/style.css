@@ -152,7 +152,7 @@ span.psw {
     left: 61%;
 	padding: 10px;
 	border: solid;
-	border-width: 5px;
+	borderwidth: 5px;
 	background-color: rgba(0,0,0,0.4); 
 }
 
@@ -164,7 +164,7 @@ span.psw {
     left: 50%;
 	padding: 10px;
 	border: solid;
-	border-width: 5px;
+	borderwidth: 5px;
 	background-color: rgba(0,0,0,0.4); 
 }
 
@@ -177,7 +177,7 @@ span.psw {
     left: 17.5%;
 	padding: 10px;
 	border: solid;
-	border-width: 5px;
+	borderwidth: 5px;
 	background-color: rgba(0,0,0,0.4); 
 }
 
@@ -188,12 +188,6 @@ span.psw {
     top: 4%;
     left: 2.5%;
 	padding: 10px;
-<<<<<<< HEAD
-	border: solid;
-	border-width: 5px;
-	background-color: rgba(0,0,0,0.4); 
-=======
->>>>>>> 72da9dc63b5b1b1c688198990094a83169e301d4
 }
 
 .logout{
