@@ -75,9 +75,18 @@ class WeatherDataParser
                     "name" => $stationInfo["name"],
                     "country" => $stationInfo["country"],
                     "elevation" => $stationInfo["elevation"],
-                    "date" => new DateTime($row["DATE"] . " " . $row["TIME"]),
-                    "temperature" => $row["TEMP"],
-                    "dewpoint" => $row["DEWP"]
+                    "datetime" => new DateTime($row["DATE"] . " " . $row["TIME"]),
+                    "temperature" => (float)$row["TEMP"],
+                    "dewpoint" => (float)$row["DEWP"],
+                    "atmosphericPressureStationLevel" => (float)$row["STP"],
+                    "atmosphericPressureSeaLevel" => (float)$row["SLP"],
+                    "visibility" => (float)$row["VISIB"],
+                    "windSpeed" => (float)$row["WDSP"],
+                    "precipitate" => (float)$row["PRCP"],
+                    "snowfall" => (float)$row["SNDP"],
+                    "frshtt" => $row["FRSHTT"],
+                    "cloudCoverage" => (float)$row["CLDC"],
+                    "windDirection" => (int)$row["WNDDIR"]
                 ),
                 "geometry" => array(
                     "type" => "Point",
