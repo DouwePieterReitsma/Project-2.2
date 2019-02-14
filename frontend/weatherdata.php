@@ -94,9 +94,9 @@ class WeatherDataParser
 
 $parser = new WeatherDataParser();
 
-$directory = "data/";
+$config = include("config.php");
 
-$files = glob($directory . "*.csv");
+$files = glob($config->directory . "*.csv");
 
 foreach($files as $filename)
 {
