@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url("clouds.png");
+	background-image: url("/resources/images/clouds.png");
 	}
 
 input[type=text], input[type=password] {

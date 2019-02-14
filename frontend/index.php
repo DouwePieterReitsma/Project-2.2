@@ -17,7 +17,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
     <title>Data Sheet</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="resources/css/style.css">
  
 
   </head>
@@ -25,7 +25,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
   
   	<div class="logobox">
 	
-	<img src="logo.png" alt="Logo" class="companylogo"> 
+	<img src="resources/images/logo.png" alt="Logo" class="companylogo"> 
 	
 	</div>
   
