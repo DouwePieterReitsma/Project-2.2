@@ -27,7 +27,7 @@ class WeatherDataParser
         }
     }
 
-    public function getStationInfo($stationNumber)
+    private function getStationInfo($stationNumber)
     {
         if($stationNumber == null || !is_integer($stationNumber))
         {
