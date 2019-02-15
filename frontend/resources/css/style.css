@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url("clouds.png");
+	background-image: url("/resources/images/clouds.png");
 	}
 
 input[type=text], input[type=password] {
@@ -20,6 +20,43 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+}
+/* Google maps style and location
+Always set the map height explicitly to define the size of the div
+ element that contains the map. */
+#map {
+	height: 62.5%;
+	width: 32.5%;
+	position: absolute;
+    top: 30%;
+    left: 2.5%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 80%;
+	margin: 0;
+	padding: 0;
+    }
+	
+table {
+  background-color: rgba(0,0,0,0.4); 
+  height: 100%;
+}
+	
+/* Data display from map */	
+.mapdata {
+	height: 62.5%;
+	width: 15%;
+	position: absolute;
+    top: 30%;
+    left: 35%;
+	borderwidth: 5px;
+}
+
+th, td {
+  padding: 2px;
+  border: solid;
+  borderwidht: 1px;
 }
 
 .center {
@@ -47,11 +84,6 @@ button:hover {
   position: relative;
 }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
 .container {
   padding: 16px;
 }
@@ -60,7 +92,6 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
-
 
 .popupmenu {
   display: none; 
@@ -112,4 +143,66 @@ span.psw {
   from {transform: scale(0)} 
   to {transform: scale(1)}
 }
+
+.downloadbox{
+	height: 15%;
+	width: 22.5%;
+	position: absolute;
+    top: 75%;
+    left: 61%;
+	padding: 10px;
+	border: solid;
+	borderwidth: 5px;
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.databox{
+	height: 85%;
+	width: 45%;
+	position: absolute;
+    top: 5%;
+    left: 50%;
+	padding: 10px;
+	border: solid;
+	borderwidth: 5px;
+	background-color: rgba(0,0,0,0.4); 
+}
+
+
+.welcomebox{
+	height: 12.5%;
+	width: 25%;
+	position: absolute;
+    top: 7%;
+    left: 17.5%;
+	padding: 10px;
+	border: solid;
+	borderwidth: 5px;
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.logobox{
+	height: 10%;
+	width: 10%;
+	position: absolute;
+    top: 4%;
+    left: 2.5%;
+	padding: 10px;
+}
+
+.logout{
+
+   position:fixed;
+   right:10px;
+   top:5px;
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+}
+
+nav ul{height:640px; width:95%;}
+nav ul{overflow:hidden; overflow-y:scroll;}
 

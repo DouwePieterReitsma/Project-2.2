@@ -1,7 +1,7 @@
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resources/css/style.css">
 </head>
 <body>
 
@@ -15,19 +15,19 @@
  	<!-- Popup Menu voor Login -->
 	<div id="loginMenu" class="popupmenu">
 	  
-		<form class="popupmenu-content animate" action="/action_page.php">
+		<form class="popupmenu-content animate" action="/login.php" method="POST">
 			<!-- nog toevoegen -> bedrijfslogo -->
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('loginMenu').style.display='none'" class="close" title="Close">&times;</span>
-				<img src="img_avatar2.png" alt="Logo" class="companylogo"> 
+				<img src="logo.png" alt="Logo" class="companylogo"> 
 			</div>
 		
 			<div class="container">
-				<label for="uname"><b>Username</b></label>
-				  <input type="text" placeholder="Enter Username" name="uname" required>
+				<label for="username"><b>Username</b></label>
+				  <input type="text" placeholder="Enter Username" name="username" required>
 
-				  <label for="psw"><b>Password</b></label>
-				  <input type="password" placeholder="Enter Password" name="psw" required>
+				  <label for="password"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="password" required>
 					
 				  <button type="submit">Login Here</button>
 				  <label>
@@ -45,22 +45,22 @@
 	<!-- Popup Menu voor registratie -->
 	<div id="registerMenu" class="popupmenu">
 	  
-		<form class="popupmenu-content animate" action="/action_page.php">
+		<form class="popupmenu-content animate" action="/register.php" method="POST">
 		
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('registerMenu').style.display='none'" class="close" title="Close">&times;</span>
-				<img src="img_avatar2.png" alt="Logo" class="companylogo"> 
+				<img src="logo.png" alt="Logo" class="companylogo"> 
 			</div>
 		
 			<div class="container">
-				<label for="uname"><b>Email Address</b></label>
-				  <input type="text" placeholder="Enter Email" name="uname" required>
+				<label for="username"><b>Email Address</b></label>
+				  <input type="text" placeholder="Enter Email" name="username" required>
 
-				  <label for="psw"><b>Password</b></label>
-				  <input type="password" placeholder="Enter Password" name="psw" required>
+				  <label for="password"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="password" required>
 				  
-				  <label for="psw"><b>Re-enter Password</b></label>
-				  <input type="password" placeholder="Enter Password" name="psw" required>
+				  <label for="password"><b>Re-enter Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="password" required>
 					
 				  <button type="submit">Register</button>
 			</div>
