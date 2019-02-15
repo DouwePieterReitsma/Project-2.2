@@ -8,11 +8,12 @@ class MTServer {
 
         Socket connection;
         ServerSocket server = new ServerSocket(PORT);
+        System.err.println("Server started.");
 
         while (true) {
 
             connection = server.accept();
-            Thread worker = new Thread(new Worker(connection));
+            Thread worker = new Thread(new ServerThread(connection));
             worker.start();
         }
     }
