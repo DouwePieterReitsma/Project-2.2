@@ -20,10 +20,8 @@ class WeatherDataParser
 
         $csv = array();
 
-        foreach($rows as $row)
-        {
-            $this->csv[] = array_combine($header, $row);
-        }
+        // only the most recent data is needed
+        $this->csv[] = array_combine($header, end($rows));
     }
 
     private function getStationInfo($stationNumber)
@@ -74,7 +72,7 @@ class WeatherDataParser
                     "name" => $stationInfo["name"],
                     "country" => $stationInfo["country"],
                     "elevation" => $stationInfo["elevation"],
-                    "datetime" => new DateTime($row["DATE"] . " " . $row["TIME"]),
+                    "datetime" => $row["DATE"] . " " . $row["TIME"],
                     "temperature" => (float)$row["TEMP"],
                     "dewpoint" => (float)$row["DEWP"],
                     "atmosphericPressureStationLevel" => (float)$row["STP"],
@@ -83,7 +81,7 @@ class WeatherDataParser
                     "windSpeed" => (float)$row["WDSP"],
                     "precipitate" => (float)$row["PRCP"],
                     "snowfall" => (float)$row["SNDP"],
-                    "frshtt" => $row["FRSHTT"],
+                    "frshtt" => (int)$row["FRSHTT"],
                     "cloudCoverage" => (float)$row["CLDC"],
                     "windDirection" => (int)$row["WNDDIR"]
                 ),

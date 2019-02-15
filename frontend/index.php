@@ -178,7 +178,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
 	</div>
 
    <div id="map" </div>
-    <script>
+    <!-- <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -190,7 +190,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
       }
 
 
-    </script>
+    </script> -->
+		<script src="/resources/js/index.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=
 AIzaSyABY3ccIgpUROaVrcQjp90IYjlXwTZhYdA&callback=initMap"
     async defer></script>
