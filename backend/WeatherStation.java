@@ -6,7 +6,9 @@ public class WeatherStation {
     private StringBuilder newLine = new StringBuilder();
     // The writer for this station.
     private BufferedWriter writer;
+    // The directory for this weather stations' .csv
     private File directory;
+    private Boolean newFile;
 
     // The number of the weather station.
     private String stationNumber;
@@ -53,8 +55,9 @@ public class WeatherStation {
     private String previousCloudCover;
     private String previousWindDirection;
 
-    public WeatherStation(String station, File directory) {
+    public WeatherStation(String station, File directory, Boolean newFile) {
         this.stationNumber = station;
+        this.newFile = newFile;
 
         try {
             this.directory = new File(directory + "\\" + this.stationNumber + ".csv");
@@ -196,7 +199,7 @@ public class WeatherStation {
     public void writeToFile() {
 
         try {
-            if (this.directory.exists()) {
+            if (!newFile) {
                 this.writer.append(this.getNewLine());
                 this.writer.newLine();
                 this.writer.flush();
@@ -206,8 +209,9 @@ public class WeatherStation {
                 this.writer.write("STN,DATE,TIME,TEMP,DEWP,STP,SLP,VISIB,WDSP,PRCP,SNDP,FRSHTT,CLDC,WNDDIR");
                 this.writer.newLine();
                 this.writer.append(this.newLine);
-                this.writer.newLine();
                 this.writer.flush();
+
+                this.newFile = false;
             }
 
         } catch (IOException e) {
