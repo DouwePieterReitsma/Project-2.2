@@ -178,21 +178,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
 	</div>
 
    <div id="map" </div>
-    <!-- <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 42.45, lng: 59.617},
-          zoom: 3
-        });
-
-				map.data.loadGeoJson("weatherdata.php");
-      }
-
-
-    </script> -->
-		<script src="/resources/js/index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=
+	 <script src="/resources/js/index.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=
 AIzaSyABY3ccIgpUROaVrcQjp90IYjlXwTZhYdA&callback=initMap"
     async defer></script>
 	
