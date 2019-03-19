@@ -205,7 +205,6 @@ public class WeatherStation {
                 this.writer.flush();
                 setNewLine();
             } else {
-                System.out.println("Test");
                 this.writer.write("STN,DATE,TIME,TEMP,DEWP,STP,SLP,VISIB,WDSP,PRCP,SNDP,FRSHTT,CLDC,WNDDIR");
                 this.writer.newLine();
                 this.writer.append(this.newLine);
