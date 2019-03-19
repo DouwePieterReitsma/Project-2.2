@@ -7,7 +7,7 @@ public class Worker implements Runnable {
 
     private Socket connection;
     private static Set<String> stationSet = new HashSet<>();
-    private static File directory = new File("C:\\Users\\kevin\\Desktop\\Testing\\");
+    private static File directory = new File("D:\\csv\\");
 
     public Worker(Socket connection) {
         this.connection = connection;

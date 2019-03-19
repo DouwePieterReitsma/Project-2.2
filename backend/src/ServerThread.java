@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class ServerThread implements Runnable {
 
     private Socket connection;
-    private static File directory = new File("C:\\Users\\kevin\\Desktop\\Testing\\");
+    private static File directory = new File("D:\\Project-2.2\\frontend\\data");
     private HashMap<String, WeatherStation> stationList = new HashMap<>();
     private WeatherStation currentStation;
     private ArrayList<String> stationArray;
