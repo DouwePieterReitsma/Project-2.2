@@ -105,7 +105,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
 
 
 	
-	<div  class="mapdata"</div>
+	<!-- <div  class="mapdata"</div>
 		
 		<table style="width:10%" padding: 5px;>
 			<tr padding: 5px;>
@@ -175,7 +175,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false)
 			
 		</table> 
 	
-	</div>
+	</div> -->
 
    <div id="map" </div>
 	 <script src="/resources/js/index.js"></script>

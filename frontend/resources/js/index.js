@@ -1,7 +1,7 @@
 let map;
 let selectedStation = null;
 
-const MAP_UPDATE_INTERVAL = 1000;
+const MAP_UPDATE_INTERVAL = 5000;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -31,6 +31,8 @@ function initMap() {
             `<div id='infoWindow'>
                 <div><h4>${weatherData.name}, ${weatherData.country}</h4></div>
                 <div>Temperature: <span id='temperature'>${weatherData.temperature}</span> °C</div>
+                <div>Elevation: <span id='elevation'>${weatherData.elevation}</span></div>
+                <div>Dew point: <span id='dewpoint'>${weatherData.dewPoint}</span></div>
             </div>`;
 
 

@@ -19,7 +19,7 @@
 			<!-- nog toevoegen -> bedrijfslogo -->
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('loginMenu').style.display='none'" class="close" title="Close">&times;</span>
-				<img src="logo.png" alt="Logo" class="companylogo"> 
+				<img src="/resources/images/logo.png" alt="Logo" class="companylogo"> 
 			</div>
 		
 			<div class="container">
