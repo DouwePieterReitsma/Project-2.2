@@ -42,9 +42,12 @@ function register($username, $password)
 $username = array_key_exists('username', $_POST) ? trim($_POST['username']) : null;
 $password = array_key_exists('password', $_POST) ? trim($_POST['password']) : null;
 
+$allowedHosts = "hanze.nl";
+
 if(!empty($username) || !empty($password))
 {
     $available = usernameIsAvailable($username);
+
 
     if($available)
     {

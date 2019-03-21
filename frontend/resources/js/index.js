@@ -33,6 +33,14 @@ function initMap() {
                 <div>Temperature: <span id='temperature'>${weatherData.temperature}</span> °C</div>
                 <div>Elevation: <span id='elevation'>${weatherData.elevation}</span></div>
                 <div>Dew point: <span id='dewpoint'>${weatherData.dewPoint}</span></div>
+				<div>Atmospheric Pressure at the station level: <span id='atmosphericPressureStationLevel'>${weatherData.atmosphericPressureStationLevel}</span></div>
+				<div>Atmospheric Pressure at Sea Level: <span id='atmosphericPressureSeaLevel'>${weatherData.atmosphericPressureSeaLevel}</span></div>
+				<div>Visibility: <span id='visibility'>${weatherData.visibility}</span></div>
+				<div>Wind Speed: <span id='windSpeed'>${weatherData.windSpeed}</span></div>
+				<div>Precipitation: <span id='precipitate'>${weatherData.precipitate}</span></div>
+				<div>Snowfall: <span id='snowfall'>${weatherData.snowfall}</span></div>
+				<div>Cloud Coverage: <span id='cloudCoverage'>${weatherData.cloudCoverage}</span></div>
+				<div>Wind Direction: <span id='windDirection'>${weatherData.windDirection}</span></div>
             </div>`;
 
 
